@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Theme changer!</title>
+</head>
+<style>
+     html {
+          scroll-behavior: smooth;
+     }
+
+     body {
+          margin: 0;
+          padding: 0;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     }
+
+     .toogle {
+          background: #12461b;
+          padding: 10px;
+          padding-top: 30px;
+          height: 60px;
+          text-align: center;
+     }
+
+     .light {
+          text-decoration: none;
+          background-color: #E9ECEF;
+          color: #1b7094;
+          padding: 12px;
+          border-radius: 30px;
+          font-size: 18px;
+          transition: 0.3s ease;
+     }
+
+     .light:hover {
+          background-color: #38BDF8;
+          color: #E9ECEF;
+          box-shadow: 0 0 20px #38BDF8;
+     }
+
+     .toplight {
+          text-decoration: none;
+          font-weight: 700;
+          color: #38BDF8;
+     }
+     .toplight:hover{
+          color: #244fbc;
+     }
+     .topdark{
+          text-decoration: none;
+          color: #b375ff;
+     }
+     .topdark:hover{
+          color: rgb(202, 164, 255);
+     }
+     .topnature{
+          text-decoration: none;
+          color: #48b172;
+          background-color: #053418;
+          padding: 8px;
+          border-radius: 20px;
+          transition: 0.2s ease;
+     }
+     .topnature:hover{
+          color: #12461b;
+          background-color: #086b2f41;
+     }
+     .dark {
+          text-decoration: none;
+          background-color: #19284d;
+          color: #e6d2ff;
+          padding: 12px;
+          border-radius: 30px;
+          margin-left: 15px;
+          font-size: 18px;
+          transition: 0.3s ease;
+     }
+
+     .dark:hover {
+          background-color: #e6d2ff;
+          color: #19284d;
+          box-shadow: 0 0 20px #e6d2ff;
+     }
+
+     .nature {
+          text-decoration: none;
+          background-color: #DCFCE7;
+          color: #22C55E;
+          padding: 12px;
+          margin-left: 15px;
+          border-radius: 30px;
+          font-size: 18px;
+          transition: 0.3s ease;
+          animation: glow 4s ease infinite;
+     }
+
+     .nature:hover {
+          background-color: #22C55E;
+          color: #DCFCE7;
+     }
+
+     @keyframes glow {
+          0% {
+               box-shadow: 0 0 2px #b1f2c8;
+          }
+
+          50% {
+               box-shadow: 0 0 30px #b1f2c8;
+               background-color: #22C55E;
+               color: #DCFCE7;
+          }
+
+          100% {
+               box-shadow: 0 0 2px #b1f2c8;
+          }
+     }
+
+     .color1 {
+          background-color: #E9ECEF;
+          color: #0F172A;
+          text-align: center;
+          padding: 30px;
+          height: 100vh;
+     }
+
+     .color1 h1 {
+          color: #38BDF8;
+          font-size: 60px;
+     }
+
+     .color2 {
+          background-color: #0F172A;
+          color: #E9ECEF;
+          text-align: center;
+          padding: 30px;
+          height: 100vh;
+     }
+
+     .color2 h1 {
+          color: #b375ff;
+          font-size: 60px;
+     }
+
+     .color3 {
+          background-image: url(image.jpg);
+          /* background-size: cover; */
+          color: #14532D;
+          text-align: center;
+          padding: 30px;
+          height: 100vh;
+     }
+
+     .color3 h1 {
+          color: #22C55E;
+          font-size: 60px;
+     }
+</style>
+
+<body>
+     <div class="toogle" id="top">
+          <a href="#light" class="light">Light</a>
+          <a href="#dark" class="dark">Dark</a>
+          <a href="#nature" class="nature">nature</a>
+     </div>
+     <div class="color1" id="light">
+          <h1>Light theme</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Amet sed distinctio nesciunt cupiditate cum
+               at
+               voluptas harum rem vero corrupti laborum, <br>ad veniam suscipit quidem odio mollitia eveniet perferendis
+               quia!</p>
+          <p>Everything created by ME becuase <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+               non
+               dignissimos? Ipsam a, <br> quis dolorem voluptatum deleniti ex voluptates consequuntur sint. Nostrum
+               fugiat
+               eius cum qui ad! Natus, voluptatum ipsam.</p>
+          <br>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Amet sed distinctio nesciunt cupiditate cum
+               at
+               voluptas harum rem vero corrupti laborum, <br>ad veniam suscipit quidem odio mollitia eveniet perferendis
+               quia!</p>
+          <p>Everything created by ME becuase <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+               non
+               dignissimos? Ipsam a, <br> quis dolorem voluptatum deleniti ex voluptates consequuntur sint. Nostrum
+               fugiat
+               eius cum qui ad! Natus, voluptatum ipsam.</p>
+          <br>
+          <a href="#top" class="toplight">Go to top</a>
+     </div>
+     <div class="color2" id="dark">
+          <h1>Dark theme</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Amet sed distinctio nesciunt cupiditate cum
+               at
+               voluptas harum rem vero corrupti laborum, <br>ad veniam suscipit quidem odio mollitia eveniet perferendis
+               quia!</p>
+          <p>Everything created by ME becuase <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+               non
+               dignissimos? Ipsam a, <br> quis dolorem voluptatum deleniti ex voluptates consequuntur sint. Nostrum
+               fugiat
+               eius cum qui ad! Natus, voluptatum ipsam.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Amet sed distinctio nesciunt cupiditate cum
+               at
+               voluptas harum rem vero corrupti laborum, <br>ad veniam suscipit quidem odio mollitia eveniet perferendis
+               quia!</p>
+          <p>Everything created by ME becuase <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+               non
+               dignissimos? Ipsam a, <br> quis dolorem voluptatum deleniti ex voluptates consequuntur sint. Nostrum
+               fugiat
+               eius cum qui ad! Natus, voluptatum ipsam.</p>
+          <br>
+          <a href="#top" class="topdark">Go to top</a>
+     </div>
+     <div class="color3" id="nature">
+          <h1>Nature theme</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Amet sed distinctio nesciunt cupiditate cum
+               at
+               voluptas harum rem vero corrupti laborum, <br>ad veniam suscipit quidem odio mollitia eveniet perferendis
+               quia!</p>
+          <p>Everything created by ME becuase <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+               non
+               dignissimos? Ipsam a, <br> quis dolorem voluptatum deleniti ex voluptates consequuntur sint. Nostrum
+               fugiat
+               eius cum qui ad! Natus, voluptatum ipsam.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Amet sed distinctio nesciunt cupiditate cum
+               at
+               voluptas harum rem vero corrupti laborum, <br>ad veniam suscipit quidem odio mollitia eveniet perferendis
+               quia!</p>
+          <p>Everything created by ME becuase <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+               non
+               dignissimos? Ipsam a, <br> quis dolorem voluptatum deleniti ex voluptates consequuntur sint. Nostrum
+               fugiat
+               eius cum qui ad! Natus, voluptatum ipsam.</p>
+          <br>
+          <a href="#top" class="topnature">Go to top</a>
+     </div>
+</body>
+
+</html>
